@@ -1,0 +1,91 @@
+// 重置样式
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd,
+span, a, img, i, strong
+{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+// 浮动
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+// 清除浮动
+.clear-float {
+  zoom: 1;
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+// swiper
+.swiper-slide {
+  .bg-inner {
+    background: rgba(86, 83, 100, .7);
+    width: 100%;
+    height: 100%;
+  }
+  .bg {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    filter: grayscale(.7);
+  }
+  &:nth-child(1) {
+    .bg {
+      background: url("../assets/img/bg_1.jpg") center center no-repeat;
+      filter: grayscale(0);
+    }
+  }
+  &:nth-child(2) {
+    .bg {
+      background: url("../assets/img/bg_2.jpg") center center no-repeat;
+    }
+  }
+  &:nth-child(3) {
+    .bg {
+      background: url("../assets/img/bg_3.jpg") center center no-repeat;
+    }
+  }
+  &:nth-child(4) {
+    .bg {
+      background: url("../assets/img/bg_4.jpg") center center no-repeat;
+    }
+  }
+  &:nth-child(5) {
+    .bg {
+      background: url("../assets/img/bg_5.jpg") center center no-repeat;
+    }
+  }
+  &:nth-child(6) {
+    .bg {
+      background: url("../assets/img/bg_6.jpg") center center no-repeat;
+    }
+  }
+}

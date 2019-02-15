@@ -1,0 +1,6 @@
+export { default as slide1 } from './slide1'
+export { default as slide2 } from './slide2'
+export { default as slide3 } from './slide3'
+export { default as slide4 } from './slide4'
+export { default as slide5 } from './slide5'
+export { default as slide6 } from './slide6'
